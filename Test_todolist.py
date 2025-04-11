@@ -1,7 +1,9 @@
 import unittest
 from todo import ToDoList
 
+
 class TestToDoList(unittest.TestCase):
+
     def setUp(self):
         self.todo = ToDoList()
 
@@ -32,6 +34,7 @@ class TestToDoList(unittest.TestCase):
         self.todo.add_task("Do laundry")
         self.todo.clear_tasks()
         self.assertEqual(len(self.todo.get_tasks()), 0)
+
 
 if __name__ == '__main__':
     unittest.main()
